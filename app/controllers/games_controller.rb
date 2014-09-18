@@ -44,7 +44,7 @@ class GamesController < ApplicationController
   def update
     respond_to do |format|
       if @game.update(game_params)
-        format.html { redirect_to @game, notice: 'No one can save Tokyo' }
+        format.html { redirect_to @game, notice: 'Fight Like a PIRATE' }
         format.json { render :show, status: :ok, location: @game }
       else
         format.html { render :edit }
