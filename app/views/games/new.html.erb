@@ -1,0 +1,7 @@
+<h1>Pirate's Dice</h1>
+<h3>You may lie, you may say the truth, but always be PIRATE</h3>
+<h4>Input how many dice you will row to start the game</h4>
+<%= form_for @game do |f| %>
+  <%=f.text_field :number  %>
+  <p><%= f.submit 'row the dice' %></p>
+<% end %>

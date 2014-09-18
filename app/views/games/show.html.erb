@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<h2>Pirate's Dice</h1>
+<h4>Row the dice, like you are a PIRATE</h4>
+<%= form_for @game do |f| %>
+  <%=f.text_field :number  %>
+  <p><%= f.submit 'row the dice' %></p>
+<% end %>
+
+<p>
+  <strong>Dice Rowed :</strong>
+  <%= @game.number %>
+</p>
+<strong><%= @row %></strong>
+</br><br>
+<%= link_to 'Home', root_path %>
